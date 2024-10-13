@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Deadlock Results</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Center the card horizontally using margin utilities -->
+        <div class="row justify-content-center">
+            <div class="col-md-6"> <!-- Adjust the column width here -->
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h1>Deadlock Match Results</h1>
+                    </div>
+                    <div class="card-body">
+                        <form action="connect.php" method="post">
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" id="username" name="username">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="hero">Hero</label>
+                                <select class="form-control" id="hero" name="hero">
+                                    <option value="Abrams">Abrams</option>
+                                    <option value="Bebop">Bebop</option>
+                                    <option value="Dynamo">Dynamo</option>
+                                    <option value="Grey Talon">Grey Talon</option>
+                                    <option value="Haze">Haze</option>
+                                    <option value="Infernus">Infernus</option>
+                                    <option value="Ivy">Ivy</option>
+                                    <option value="Kelvin">Kelvin</option>
+                                    <option value="Lady Geist">Lady Geist</option>
+                                    <option value="Lash">Lash</option>
+                                    <option value="McGinnis">McGinnis</option>
+                                    <option value="Mo & Krill">Mo & Krill</option>
+                                    <option value="Paradox">Paradox</option>
+                                    <option value="Pocket">Pocket</option>
+                                    <option value="Seven">Seven</option>
+                                    <option value="Shiv">Shiv</option>
+                                    <option value="Vindicta">Vindicta</option>
+                                    <option value="Viscous">Viscous</option>
+                                    <option value="Warden">Warden</option>
+                                    <option value="Wraith">Wraith</option>
+                                    <option value="Yamato">Yamato</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="victory">Victory</label>
+                                <div>
+                                    <label for="yes" class="radio-inline">
+                                        <input type="radio" name="victory" value="yes" id="yes"> Yes
+                                    </label>
+                                    <label for="no" class="radio-inline">
+                                        <input type="radio" name="victory" value="no" id="no"> No
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="totalSouls">Total Souls</label>
+                                <input type="number" class="form-control" id="totalSouls" name="totalSouls">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="kills">Kills</label>
+                                <input type="number" class="form-control" id="kills" name="kills">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="deaths">Deaths</label>
+                                <input type="number" class="form-control" id="deaths" name="deaths">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="assists">Assists</label>
+                                <input type="number" class="form-control" id="assists" name="assists">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="playerDmg">Player Damage</label>
+                                <input type="number" class="form-control" id="playerDmg" name="playerDmg">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="objDmg">Objective Damage</label>
+                                <input type="number" class="form-control" id="objDmg" name="objDmg">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="healing">Healing</label>
+                                <input type="number" class="form-control" id="healing" name="healing">
+                            </div>
+
+                            <input type="submit" class="btn btn-primary" value="Submit">
+
+                            <!-- Add button to view stats -->
+                            <button type="submit" name="viewStats" class="btn btn-secondary">View Stats</button>
+                        </form>
+                    </div>
+                    <div class="card-footer text-right">
+                        <small>By Aaron Faloon</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
